@@ -1,15 +1,15 @@
-# Basic operators, maths
+# Basis operators, wiskunde
 
-We know many operators from school. They are things like addition `+`, multiplication `*`, subtraction `-`, and so on.
+We kennen veel operators van school. Het zijn dingen zoals optellen `+`, vermenigvuldigen `*`, aftrekking `-`, enzovoort.
 
-In this chapter, we’ll start with simple operators, then concentrate on JavaScript-specific aspects, not covered by school arithmetic.
+In dit hoofdstuk beginnen we met eenvoudige operators, en concentreren we ons vervolgens op JavaScript-specifieke aspecten, niet gedekt door schoolrekenen.
 
-## Terms: "unary", "binary", "operand"
+## Termen: "unair", "binair", "operand"
 
-Before we move on, let's grasp some common terminology.
+Voordat we gaan verder, laten we eerst wat algemene terminologie begrijpen.
 
-- *An operand* -- is what operators are applied to. For instance, in the multiplication of `5 * 2` there are two operands: the left operand is `5` and the right operand is `2`. Sometimes, people call these "arguments" instead of "operands".
-- An operator is *unary* if it has a single operand. For example, the unary negation `-` reverses the sign of a number:
+- *Een operand* -- is waar operators op worden toegepast. Bijvoorbeeld, in de vermenigvuldiging van `5 * 2` zijn er twee operanden: de linker operand is `5` en de rechter operand is `2`. Soms noemen mensen deze "argumenten" in plaats van "operanden".
+- Een operator is *unair* als hij een enkele operand heeft. Bijvoorbeeld, de unaire ontkenning `-` keert het teken van een getal om: 
 
     ```js run
     let x = 1;
@@ -17,16 +17,16 @@ Before we move on, let's grasp some common terminology.
     *!*
     x = -x;
     */!*
-    alert( x ); // -1, unary negation was applied
+    alert( x ); // -1, unaire ontkenning is toegepast
     ```
-- An operator is *binary* if it has two operands. The same minus exists in binary form as well:
+- Een operator is *binair* als hij twee operanden heeft. Dezelfde min bestaat ook in binaire vorm:
 
     ```js run no-beautify
     let x = 1, y = 3;
-    alert( y - x ); // 2, binary minus subtracts values
+    alert( y - x ); // 2, binaire min trekt waarden af
     ```
 
-    Formally, in the examples above we have two different operators that share the same symbol: the negation operator, a unary operator that reverses the sign, and the subtraction operator, a binary operator that subtracts one number from another.
+    Formeel hebben we in de bovenstaande voorbeelden twee verschillende operators die hetzelfde symbool delen: de ontkenningsoperator, een unaire operator die het teken omkeert, en de aftrekkingsoperator, een binaire operator die het ene getal van het andere aftrekt.
 
 ## Maths
 
