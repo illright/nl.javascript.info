@@ -28,49 +28,49 @@ Voordat we gaan verder, laten we eerst wat algemene terminologie begrijpen.
 
     Formeel hebben we in de bovenstaande voorbeelden twee verschillende operators die hetzelfde symbool delen: de ontkenningsoperator, een unaire operator die het teken omkeert, en de aftrekkingsoperator, een binaire operator die het ene getal van het andere aftrekt.
 
-## Maths
+## Wiskunde
 
-The following math operations are supported:
+De volgende wiskundige bewerkingen worden ondersteund:
 
-- Addition `+`,
-- Subtraction `-`,
-- Multiplication `*`,
-- Division `/`,
-- Remainder `%`,
-- Exponentiation `**`.
+- Optellen `+`,
+- Aftrekken `-`,
+- Vermenigvuldigen `*`,
+- Afdeling `/`,
+- Rest `%`,
+- Exponentiatie `**`.
 
-The first four are straightforward, while `%` and `**` need a few words about them.
+De eerste vier zijn eenvoudig, terwijl `%` en `**` er een paar woorden over nodig hebben.
 
-### Remainder %
+### Rest %
 
-The remainder operator `%`, despite its appearance, is not related to percents.
+De rest-operator `%` is, ondanks zijn uiterlijk, niet gerelateerd aan procenten.
 
-The result of `a % b` is the [remainder](https://en.wikipedia.org/wiki/Remainder) of the integer division of `a` by `b`.
+Het resultaat van `a % b` is de [rest](https://nl.wikipedia.org/wiki/Rest) van de gehele deling van `a` door `b`.
 
-For instance:
+Bijvoorbeeld:
 
 ```js run
-alert( 5 % 2 ); // 1, a remainder of 5 divided by 2
-alert( 8 % 3 ); // 2, a remainder of 8 divided by 3
+alert( 5 % 2 ); // 1, een rest van 5 gedeeld door 2
+alert( 8 % 3 ); // 2, een rest van 8 gedeeld door 3
 ```
 
-### Exponentiation **
+### Exponentiatie **
 
-The exponentiation operator `a ** b` multiplies `a` by itself `b` times.
+De exponentiatie-operator `a ** b` vermenigvuldigt `a` met zichzelf `b` keer.
 
-For instance:
+Bijvoorbeeld:
 
 ```js run
-alert( 2 ** 2 ); // 4  (2 multiplied by itself 2 times)
-alert( 2 ** 3 ); // 8  (2 * 2 * 2, 3 times)
-alert( 2 ** 4 ); // 16 (2 * 2 * 2 * 2, 4 times)
+alert( 2 ** 2 ); // 4  (2 vermenigvuldigd met zichzelf 2 keer)
+alert( 2 ** 3 ); // 8  (2 * 2 * 2, 3 keer)
+alert( 2 ** 4 ); // 16 (2 * 2 * 2 * 2, 4 keer)
 ```
 
-Mathematically, the exponentiation is defined for non-integer numbers as well. For example, a square root is an exponentiation by `1/2`:
+Wiskundig is de exponentiatie ook gedefineerd voor niet-gehele getallen. Een vierkantswortel is bijvoorbeeld een exponentiatie met `1/2`: 
 
 ```js run
-alert( 4 ** (1/2) ); // 2 (power of 1/2 is the same as a square root)
-alert( 8 ** (1/3) ); // 2 (power of 1/3 is the same as a cubic root)
+alert( 4 ** (1/2) ); // 2 (macht van 1/2 is hetzelfde als een vierkantswortel)
+alert( 8 ** (1/3) ); // 2 (macht van 1/3 is hetzelfde als een kubieke wortel)
 ```
 
 
