@@ -74,45 +74,45 @@ alert( 8 ** (1/3) ); // 2 (macht van 1/3 is hetzelfde als een kubieke wortel)
 ```
 
 
-## String concatenation with binary +
+## Tekenreeks samenvoeging met binaire +
 
-Let's meet features of JavaScript operators that are beyond school arithmetics.
+Laten we eens kennismaken met functies van JavaScript operators die verder gaan dan schoolrekenen.
 
-Usually, the plus operator `+` sums numbers.
+Gewoonlijk telt de plus operator `+` getallen op.
 
-But, if the binary `+` is applied to strings, it merges (concatenates) them:
+Maar, als de binaire `+` wordt toegepast op tekenreeksen, worden ze samengevoegd:
 
 ```js
-let s = "my" + "string";
-alert(s); // mystring
+let s = "mijn" + "tekenreeks";
+alert(s); // mijntekenreeks
 ```
 
-Note that if any of the operands is a string, then the other one is converted to a string too.
+Merk op dat als er een van de operanden een tekenreeks is, de andere ook naar een tekenreeks wordt geconverteerd.
 
-For example:
+Bijvoorbeeld:
 
 ```js run
 alert( '1' + 2 ); // "12"
 alert( 2 + '1' ); // "21"
 ```
 
-See, it doesn't matter whether the first operand is a string or the second one.
+Kijk, het maakt niet uit of de eerste operand is een tekenreeks of de tweede.
 
-Here's a more complex example:
+Hier is een complexer voorbeeld:
 
 ```js run
-alert(2 + 2 + '1' ); // "41" and not "221"
+alert( 2 + 2 + '1' ); // "41" en niet "221"
 ```
 
-Here, operators work one after another. The first `+` sums two numbers, so it returns `4`, then the next `+` adds the string `1` to it, so it's like `4 + '1' = 41`.
+Hier werken de operators na elkaar. De eerste `+` telt twee getallen op, dus het geeft `4` terug, dan voegt de volgende `+` de tekenreeks `1` eraan toe, dus het is als `4 + '1' = 41`.
 
-The binary `+` is the only operator that supports strings in such a way. Other arithmetic operators work only with numbers and always convert their operands to numbers.
+De binaire `+` is de enige operator die tekenreeksen op een dergelijke manier ondersteunt. Andere rekenkundige operators werken alleen met getallen en zetten hun operanden altijd om in getallen.
 
-Here's the demo for subtraction and division:
+Hier is de demo voor aftrekken en delen:
 
 ```js run
-alert( 6 - '2' ); // 4, converts '2' to a number
-alert( '6' / '2' ); // 3, converts both operands to numbers
+alert( 6 - '2' ); // 4, converteert '2' naar een getal
+alert( '6' / '2' ); // 3, converteert beide operanden naar getallen
 ```
 
 ## Numeric conversion, unary +
