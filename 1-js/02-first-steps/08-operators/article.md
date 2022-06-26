@@ -115,16 +115,16 @@ alert( 6 - '2' ); // 4, converteert '2' naar een getal
 alert( '6' / '2' ); // 3, converteert beide operanden naar getallen
 ```
 
-## Numeric conversion, unary +
+## Numerieke conversie, unaire +
 
-The plus `+` exists in two forms: the binary form that we used above and the unary form.
+De plus `+` bestaat in twee vormen: de binaire vorm die we hierboven gebruikten en de unaire vorm.
 
-The unary plus or, in other words, the plus operator `+` applied to a single value, doesn't do anything to numbers. But if the operand is not a number, the unary plus converts it into a number.
+De unaire plus of, met andere woorden, de plus operator `+` toegepast op een enkele waarde, doet niets met getallen. Maar als de operand geen getal is, converteert de unaire plus het naar een getal.
 
-For example:
+Bijvoorbeeld:
 
 ```js run
-// No effect on numbers
+// Geen effect op getallen
 let x = 1;
 alert( +x ); // 1
 
@@ -132,43 +132,43 @@ let y = -2;
 alert( +y ); // -2
 
 *!*
-// Converts non-numbers
+// Converteert niet-getallen
 alert( +true ); // 1
 alert( +"" );   // 0
 */!*
 ```
 
-It actually does the same thing as `Number(...)`, but is shorter.
+Hij doet eigenlijk hetzelfde als `Number(...)` (Getal), maar is korter.
 
-The need to convert strings to numbers arises very often. For example, if we are getting values from HTML form fields, they are usually strings. What if we want to sum them?
+De behoefte om tekenreeksen naar getallen te converteren doet zich zeer vaak voor. Als we bijvoorbeeld waarden van HTML-formuliervelden krijgen, zijn dit meestal tekenreeksen. Wat als we ze willen optellen?
 
-The binary plus would add them as strings:
+De binaire plus zou ze als tekenreeksen toegevoegen:
 
 ```js run
 let apples = "2";
 let oranges = "3";
 
-alert( apples + oranges ); // "23", the binary plus concatenates strings
+alert( apples + oranges ); // "23", de binaire plus voegt tekenreeksen samen
 ```
 
-If we want to treat them as numbers, we need to convert and then sum them:
+Als we ze als getallen willen behandelen, moeten we ze converteren en dan optellen:
 
 ```js run
 let apples = "2";
 let oranges = "3";
 
 *!*
-// both values converted to numbers before the binary plus
+// beide waarden geconverteerd naar getallen vóór de binaire plus
 alert( +apples + +oranges ); // 5
 */!*
 
-// the longer variant
+// de langere variant
 // alert( Number(apples) + Number(oranges) ); // 5
 ```
 
-From a mathematician's standpoint, the abundance of pluses may seem strange. But from a programmer's standpoint, there's nothing special: unary pluses are applied first, they convert strings to numbers, and then the binary plus sums them up.
+Vanuit het standput van een wiskundige kan de overvloed aan pluspunten vreemd lijken. Maar vanuit het standput van een programmeur is er niets bijzonders: unaire plussen worden eerst toegepast, ze converteren tekenreeksen naar getallen, en dan telt de binaire plus ze op.
 
-Why are unary pluses applied to values before the binary ones? As we're going to see, that's because of their *higher precedence*.
+Waarom worden unaire plussen toegepast op waarden vóór de binaire? Zoals we zullen zien, is dat vanwege hun *hogere prioriteit*.
 
 ## Operator precedence
 
