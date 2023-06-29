@@ -68,16 +68,16 @@ Voorbeelden van dergelijke beperkingen zijn:
     Moderne browsers staan het toe om met bestanden te werken, maar de toegang is beperkt en wordt alleen geboden als de gebruiker bepaalde acties uitvoert, zoals een bestaand "droppen" in een browservenster of het selecteren via een `<input>`-tag.
 
     Er zijn manieren om met de camera/microfoon en andere apparaten te communiceren, maar hiervoor is de uitdrukkelijke toestemming van de gebruiker vereist. Een pagina met JavaScript mag dus niet de camera stiekem inschakelen, de omgeving observeren en de informatie naar de [NSA](https://nl.wikipedia.org/wiki/National_Security_Agency) sturen.
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
+- Verschillende tabbladden/vensters weten over het algemeen niets van elkaar af. Soms wel, bijvoorbeeld wanneer het ene venster JavaScript gebruikt om het andere te openen. Maar zelfs in dit geval heeft JavaScript van de ene pagina mogelijk geen toegang tot de andere als ze van verschillende sites komen (van een ander domein, ander protocol of poort).
 
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+    Dit wordt de "Same Origin Policy" (hetzelfde oorsprongbeleid) genoemd. Om dat te omzeilen moeten *beide pagina's* overeenkomen voor gegevensuitwisseling en speciale JavaScript-code bevatten die het afhandelt. Dat behandelen we in de tutorial.
 
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com` and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+    Deze beperking is, nogmaals, voor de veiligheid van de gebruiker. Een pagina van `http://anysite.com` die een gebruiker heeft geopend, mag geen toegang hebben tot een ander browsertabblad met de URL `http://gmail.com` en daar informatie stelen.
+- JavaScript kan gemakkelijk via het net communiceren met de server waar de huidige pagina vandaan komt. Maar zijn vaardigheid om gegevens van andere sites/domeinen te ontvangen is beperkt. Hoewel mogelijk, vereist het een expliciete toestemming (uitgedrukt in HTTP-koppen) van de externe kant. Nogmaals, dat is een veiligheidsbeperking.
 
 ![](limitations.svg)
 
-Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
+Dergelijke beperkingen bestaan niet als JavaScript buiten de browser wordt gebruikt, bijvoorbeeld op een server. Moderne browsers staan ook plug-ins/extensies toe die om uitgebreide machtigingen kunnen vragen.
 
 ## What makes JavaScript unique?
 
