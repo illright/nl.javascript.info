@@ -79,28 +79,28 @@ Voorbeelden van dergelijke beperkingen zijn:
 
 Dergelijke beperkingen bestaan niet als JavaScript buiten de browser wordt gebruikt, bijvoorbeeld op een server. Moderne browsers staan ook plug-ins/extensies toe die om uitgebreide machtigingen kunnen vragen.
 
-## What makes JavaScript unique?
+## Wat maakt JavaScript uniek?
 
-There are at least *three* great things about JavaScript:
+Er zijn minstens *drie* goede dingen aan JavaScript:
 
 ```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
++ Volledige integratie met HTML/CSS.
++ Eenvoudige dingen worden eenvoudig gedaan.
++ Ondersteuning door alle grote browsers en standaard ingeschakeld.
 ```
-JavaScript is the only browser technology that combines these three things.
+JavaScript is de enige browsertechnologie die deze drie dingen combineert.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+Dat is wat JavaScript uniek maakt. Daarom is het de meest voorkomende voor het maken van browserinterfaces.
 
-That said, JavaScript also allows to create servers, mobile applications, etc.
+Met JavaScript kunt je echter ook servers, mobiele applicaties enz. maken.
 
-## Languages "over" JavaScript
+## Talen "boven" JavaScript
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
+De syntax van JavaScript voldoet niet aan ieders behoeften. Verschillende mensen willen verschillende functies.
 
-That's to be expected, because projects and requirements are different for everyone.
+Dat is de verwachten want projecten en vereisten zijn voor iedereen anders.
 
-So recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+Recentelijk is er dus een overvloed van nieuwe talen verscheen, die worden *getranspileerd* (geconverteerd) naar JavaScript voordat ze in de browser worden uitgevoerd.
 
 Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
 
